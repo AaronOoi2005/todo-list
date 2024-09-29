@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <h1>Tasks</h1>
+        
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Title" required>
+            <textarea id="task-desc" placeholder="Description" required></textarea>
+            <select id="task-priority" required>
+                <option value="Low">Low Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+            <button type="submit" onclick="addAlert()">Add Task</button>
+            <script>
+                function addAlert() {
+                  alert("Success!");
+                }
+            </script>
+        </form>
+
+        <div id="tasks-container">
+            <h2>Current Tasks</h2>
+            <ul id="task-list">
+                <!-- Tasks will be listed here from javascript -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
